@@ -34,18 +34,28 @@ public class item : MonoBehaviour {
 
 	void interact()
 	{
-		Debug.Log("interact was called");
+
 		if (thisItemsType == itemType.Add)
 		{
 			this.GetComponent<AudioSource>().Play();
-			player.GetComponent<playerInventory>().inventory.Add(new item(name, thisItemsType));
+			player.GetComponent<playerInventory>().inventory.Add(this);//new item(name, thisItemsType));
 			this.GetComponent<BoxCollider>().enabled = false;
 			this.GetComponent<MeshRenderer>().enabled = false;
 			//Destroy(this.gameObject);
 		}
 		if (thisItemsType == itemType.Remove)
 		{
-			player.GetComponent<playerInventory>().inventory.Remove(RemoveMe);
+			if (player.GetComponent<playerInventory>().inventory.Contains(RemoveMe))
+			{
+				player.GetComponent<playerInventory>().inventory.Remove(RemoveMe);
+
+				if (name == "CktSlot")
+				{
+					player.GetComponent<gameWin>().swappedCktBoards = true;
+				}
+
+			}
+			
 		}
 		if (thisItemsType == itemType.Interact)
 		{
