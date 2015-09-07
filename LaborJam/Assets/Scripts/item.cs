@@ -72,6 +72,14 @@ public class item : MonoBehaviour {
 			{
 				this.GetComponent<BoxCollider>().enabled = false;
 				player.GetComponent<gameWin>().auxPowerActivated = true;
+				foreach (AudioSource a in GameObject.FindGameObjectWithTag("reactor").GetComponents<AudioSource>())
+				{
+					a.enabled = true;
+				}
+				foreach (GameObject g in GameObject.FindGameObjectsWithTag("rod"))
+				{
+					g.gameObject.GetComponent<MeshRenderer>().enabled = true;
+				}
 			}
 		}
 
