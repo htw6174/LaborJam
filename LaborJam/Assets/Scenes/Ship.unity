@@ -275,7 +275,7 @@ Transform:
   - {fileID: 1204089767}
   - {fileID: 1073124251}
   m_Father: {fileID: 1900910062}
-  m_RootOrder: 6
+  m_RootOrder: 5
 --- !u!1 &173885356
 GameObject:
   m_ObjectHideFlags: 0
@@ -427,8 +427,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1225530923}
-  m_Father: {fileID: 1900910062}
-  m_RootOrder: 0
+  m_Father: {fileID: 242649278}
+  m_RootOrder: 7
 --- !u!4 &428007374 stripped
 Transform:
   m_PrefabParentObject: {fileID: 460764, guid: 4af97f5478300c04998c2d55a6d285d3, type: 2}
@@ -2472,7 +2472,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 468586, guid: db3210e7a498f9c44a940392f0d3d710, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: db3210e7a498f9c44a940392f0d3d710, type: 2}
@@ -2555,7 +2555,7 @@ Transform:
   - {fileID: 1766509393}
   - {fileID: 1594209749}
   m_Father: {fileID: 1900910062}
-  m_RootOrder: 7
+  m_RootOrder: 6
 --- !u!1001 &1204089766
 Prefab:
   m_ObjectHideFlags: 0
@@ -2976,7 +2976,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1677201877}
   m_Layer: 0
-  m_Name: Captain's quarters
+  m_Name: Captain's Quarters
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2993,7 +2993,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1900910062}
-  m_RootOrder: 8
+  m_RootOrder: 7
 --- !u!1001 &1733072298
 Prefab:
   m_ObjectHideFlags: 0
@@ -3361,7 +3361,6 @@ Transform:
   m_LocalPosition: {x: 1.35238886, y: 1.46074867, z: 4.20886803}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 398091961}
   - {fileID: 242649278}
   - {fileID: 1904624049}
   - {fileID: 1183719681}
