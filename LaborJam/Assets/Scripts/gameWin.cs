@@ -16,7 +16,7 @@ public class gameWin : MonoBehaviour {
 
 	void triggerEnding()
 	{
-		Application.LoadLevel(Application.loadedLevel+1);
+		Application.LoadLevel("Ending");
 	}
 
 }
