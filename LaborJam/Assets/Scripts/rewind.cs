@@ -26,6 +26,10 @@ public class rewind : MonoBehaviour {
 	{
 		if (rewindMe)
 		{
+			gameObject.GetComponent<RigidbodyFirstPersonController>().enabled = false;
+			gameObject.GetComponent<Rigidbody>().useGravity = false;
+			gameObject.GetComponent<Rigidbody>().isKinematic = true;
+
 			i = positions.Count-1;
 			StartCoroutine("replay");
 			rewindMe = false;
@@ -44,7 +48,6 @@ public class rewind : MonoBehaviour {
 
 	IEnumerator replay()
 	{
-		gameObject.GetComponent<RigidbodyFirstPersonController>().enabled = false;
 		for (;i>=0;i--) 
 		{
 			mainCam.transform.rotation = rotations[i];
