@@ -12,6 +12,7 @@ GameObject:
   - 65: {fileID: 6567098}
   - 23: {fileID: 2300778}
   - 114: {fileID: 11470972}
+  - 82: {fileID: 8295930}
   m_Layer: 0
   m_Name: Door
   m_TagString: Untagged
@@ -74,6 +75,76 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!82 &8295930
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 108618}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 24317608, guid: 71787c1e65aec374d93221cbb755fdb2,
+    type: 2}
+  m_audioClip: {fileID: 8300000, guid: d4b4fa65e2cf5f34180644994beba38b, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: .300000012
+  m_Pitch: .949999988
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!114 &11470972
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -87,7 +158,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   doorHeight: 2
   doorSpeed: .100000001
-  doorCloseRange: 8
+  doorCloseRange: 10
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

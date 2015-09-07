@@ -54,6 +54,10 @@ public class item : MonoBehaviour {
 			{
 				Debug.Log("This is just a default item!!");
 			}
+			else if (name == "AuxPowerSwitch")
+			{
+				player.GetComponent<gameWin>().auxPowerActivated = true;
+			}
 		}
 
 	}

@@ -12,8 +12,8 @@ public class door : MonoBehaviour {
 	private Vector3 originalPosition;
 	private bool openMe;
 	private bool closeMe;
-	
-	
+
+	private bool playOnce = true;
 	
 	void Start()
 	{
@@ -27,6 +27,9 @@ public class door : MonoBehaviour {
 	{
 		if (openMe && transform.position.y - originalPosition.y < doorHeight) 
 		{
+			if (playOnce && !this.gameObject.GetComponent<AudioSource>().isPlaying)
+				this.gameObject.GetComponent<AudioSource>().Play();
+			playOnce = false;
 			transform.position += new Vector3 (0, doorSpeed, 0);
 		} 
 		else 
@@ -35,6 +38,9 @@ public class door : MonoBehaviour {
 		}
 		if (!openMe && closeMe && transform.position.y - originalPosition.y > 0) 
 		{
+			if (playOnce && !this.gameObject.GetComponent<AudioSource>().isPlaying)
+				this.gameObject.GetComponent<AudioSource>().Play();
+			playOnce = false;
 			transform.position -= new Vector3 (0, doorSpeed, 0);
 		} 
 		else 
@@ -48,6 +54,7 @@ public class door : MonoBehaviour {
 	
 	void interact()
 	{
+		playOnce = true;
 		openMe = true;
 	}
 	
@@ -57,6 +64,7 @@ public class door : MonoBehaviour {
 		{ 
 			if (Vector3.Distance(transform.position,player.position)> doorCloseRange)
 			{	
+				playOnce = true;
 				closeMe = true;
 			}
 			//Debug.Log(closeMe);
