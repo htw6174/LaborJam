@@ -54,6 +54,10 @@ public class item : MonoBehaviour {
 					player.GetComponent<gameWin>().swappedCktBoards = true;
 				}
 
+				if (name == "DeacPanel")
+				{
+					player.GetComponent<gameWin>().deacCodeActivated = true;
+				}
 			}
 			
 		}

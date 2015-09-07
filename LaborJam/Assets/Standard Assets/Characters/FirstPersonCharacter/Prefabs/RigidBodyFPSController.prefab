@@ -30,6 +30,10 @@ GameObject:
   - 136: {fileID: 13600000}
   - 114: {fileID: 11400004}
   - 114: {fileID: 11457278}
+  - 114: {fileID: 11401690}
+  - 114: {fileID: 11449536}
+  - 114: {fileID: 11491688}
+  - 114: {fileID: 11496648}
   m_Layer: 0
   m_Name: RigidBodyFPSController
   m_TagString: Player
@@ -94,6 +98,7 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: .0219999999
+  m_StereoMirrorMode: 0
 --- !u!54 &5400000
 Rigidbody:
   m_ObjectHideFlags: 1
@@ -221,6 +226,32 @@ MonoBehaviour:
   rigidbodyFirstPersonController: {fileID: 11400004}
   StrideInterval: 4
   RunningStrideLengthen: .722000003
+--- !u!114 &11401690
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c95ec43f914c74944b5c967edd102d18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interact_distance: 4
+  forward_offset: 1.5
+  interact_height: 1
+--- !u!114 &11449536
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16b65fe837e4e8b42b1925ba6669423e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inventory: []
 --- !u!114 &11457278
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -235,6 +266,34 @@ MonoBehaviour:
   interact_distance: 2
   forward_offset: .5
   interact_height: 1
+--- !u!114 &11491688
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff1b8512c3204fd419e5345000b9d04f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  auxPowerActivated: 0
+  swappedCktBoards: 0
+  deacCodeActivated: 0
+--- !u!114 &11496648
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a85040f7da18eb847b741ea5757d38dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rewindMe: 0
+  rewindFrameTime: .5
+  replayFrameTime: .100000001
 --- !u!136 &13600000
 CapsuleCollider:
   m_ObjectHideFlags: 1

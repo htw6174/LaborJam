@@ -3,12 +3,12 @@ using System.Collections;
 
 public class gameWin : MonoBehaviour {
 
-	public bool auxPowerActivated, swappedCktBoards = false;
+	public bool auxPowerActivated, swappedCktBoards, deacCodeActivated = false;
 
 	// Update is called once per frame
 	void Update () 
 	{
-		if (auxPowerActivated && swappedCktBoards)
+		if (auxPowerActivated && swappedCktBoards && deacCodeActivated)
 		{
 			triggerEnding();
 		}
