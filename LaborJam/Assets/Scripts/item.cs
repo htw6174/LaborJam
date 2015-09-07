@@ -37,8 +37,11 @@ public class item : MonoBehaviour {
 		Debug.Log("interact was called");
 		if (thisItemsType == itemType.Add)
 		{
+			this.GetComponent<AudioSource>().Play();
 			player.GetComponent<playerInventory>().inventory.Add(new item(name, thisItemsType));
-			Destroy(this.gameObject);
+			this.GetComponent<BoxCollider>().enabled = false;
+			this.GetComponent<MeshRenderer>().enabled = false;
+			//Destroy(this.gameObject);
 		}
 		if (thisItemsType == itemType.Remove)
 		{
