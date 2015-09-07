@@ -56,6 +56,7 @@ public class item : MonoBehaviour {
 			}
 			else if (name == "AuxPowerSwitch")
 			{
+				this.GetComponent<BoxCollider>().enabled = false;
 				player.GetComponent<gameWin>().auxPowerActivated = true;
 			}
 		}
