@@ -322,6 +322,104 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
+--- !u!1 &1389216460
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1389216462}
+  - 82: {fileID: 1389216461}
+  m_Layer: 0
+  m_Name: CreditsMusic
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &1389216461
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1389216460}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 24319208, guid: 71787c1e65aec374d93221cbb755fdb2,
+    type: 2}
+  m_audioClip: {fileID: 8300000, guid: 71e6419154defd14ca3eff4a12a892ef, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: .200000003
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 0
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 1
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+--- !u!4 &1389216462
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1389216460}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 466.498505, y: 168.563278, z: 19.25}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
 --- !u!1 &1646903505
 GameObject:
   m_ObjectHideFlags: 0
@@ -434,38 +532,19 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
-    m_Alignment: 4
+    m_Alignment: 1
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: 'This is Credits
-
-    asd
-
-    fa
-
-    sdf
-
-    asdf
-
-    a
-
-    sdf
-
-    asdf
-
-    as
-
-    df
-
-    asd
-
-    f
-
-    asdf
-
-'
+    m_LineSpacing: 1.41999996
+  m_Text: "This game was completed in about a day, \nover Labor Day weekend 2015.\n\n\n\n\n\n\nStory\nHardy
+    Whitney and Lucas Rumney\r\n\n\r\nGraphical Assets\nHardy Whitney\r and Max Alford\n\r\n\nCode
+    \nHardy Whitney and Lucas Rumney\n\n\nSound Design\nLucas Rumney\n\n\nUser Interface\nUnity
+    UI Template by Lucas Rumney\nhttps://github.com/lucasrumney94/UnityUITemplate\n\n\nExternal
+    Asset Credits\n\nSound\r\nhttp://www.freesound.org/people/GameAudio/sounds/220166/\r\nhttp://www.freesound.org/people/Headphaze/sounds/68620/\r\nhttp://www.freesound.org/people/JarAxe/sounds/204425/\r\nhttp://www.freesound.org/people/klankbeeld/sounds/191355/\r\nhttp://www.freesound.org/people/Timbre/sounds/169859/\r\nhttp://www.freesound.org/people/Alvinwhatup2/sounds/131599/\r\nhttp://www.freesound.org/people/primeval_polypod/sounds/156507/\r\nhttp://www.freesound.org/people/joedeshon/sounds/118230/\r\n\n\nFont\n\"Digital
+    Dream\" Font by PizzaDude\nhttp://www.1001fonts.com/digital-dream-font.html\r\n\n\n\n\r\nContact
+    Us\nFor questions or bugs please contact us at:\r\njetdriftstudio@gmail.com\r\n\n\rQuestions
+    or Comments regarding code are also always welcome!\n\n\n\n\nThanks for Playing!\n\n"
 --- !u!222 &1685144037
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -486,8 +565,8 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 3.81469999e-06, y: -152}
-  m_SizeDelta: {x: -435, y: 367}
+  m_AnchoredPosition: {x: 0, y: -611}
+  m_SizeDelta: {x: 0, y: 1222}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &1685144039
 MonoBehaviour:
@@ -501,4 +580,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   initialDelay: 5
-  speed: .5
+  speed: .200000003
