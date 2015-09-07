@@ -49,6 +49,7 @@ public class item : MonoBehaviour {
 		}
 		if (thisItemsType == itemType.Interact)
 		{
+			this.GetComponent<AudioSource>().Play();
 			if (name == "defaultItem")
 			{
 				Debug.Log("This is just a default item!!");
