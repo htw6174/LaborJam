@@ -8,6 +8,7 @@ public class lockCursor : MonoBehaviour {
 	{
 		Cursor.lockState = CursorLockMode.Confined;
 		Cursor.lockState = CursorLockMode.Locked;
+		Cursor.visible = false;
 	}
 	
 	// Update is called once per frame
@@ -15,6 +16,7 @@ public class lockCursor : MonoBehaviour {
 	{
 		if (Input.GetKey(KeyCode.Escape))
 		{
+			Cursor.visible = !Cursor.visible;
 		    Cursor.lockState= CursorLockMode.None;
 		}
 	}
