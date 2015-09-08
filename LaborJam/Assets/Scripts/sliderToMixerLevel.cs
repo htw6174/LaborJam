@@ -23,6 +23,6 @@ public class sliderToMixerLevel : MonoBehaviour {
 	{
 		VolumeSliderGet = this.gameObject.GetComponent<Slider>().value;
 		setValue = (VolumeSliderGet-1)*80;
-		masterMixer.SetFloat(property, setValue );
+		//masterMixer.SetFloat(property, setValue );
 	}
 }

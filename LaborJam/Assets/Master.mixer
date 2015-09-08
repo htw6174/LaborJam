@@ -10,6 +10,7 @@ AudioMixerController:
   m_MasterGroup: {fileID: 24300001}
   m_Snapshots:
   - {fileID: 24500003}
+  - {fileID: 24574530}
   m_StartSnapshot: {fileID: 24500003}
   m_SuspendThreshold: -80
   m_EnableSuspend: 1
@@ -24,6 +25,7 @@ AudioMixerController:
     - b5753b4a96d8f5544b86d82e1bfab0c2
     - c97a74b2c9b6c5a47aea48de4fc957a2
     - 814c9327db0972448895e7083356f4d9
+    - d68a525e9e943da498247414d22dbd27
     name: View
   m_CurrentViewIndex: 0
   m_TargetSnapshot: {fileID: 24500003}
@@ -38,6 +40,7 @@ AudioMixerGroupController:
   m_Children:
   - {fileID: 24319208}
   - {fileID: 24317608}
+  - {fileID: 24352132}
   m_Volume: 53dfc4329b5d5ca428c93c9420f8a1ad
   m_Pitch: 265cc10bc7f14584cb87f0fe4cc94af9
   m_Effects:
@@ -98,6 +101,23 @@ AudioMixerGroupController:
   m_Mute: 0
   m_Solo: 0
   m_BypassEffects: 0
+--- !u!243 &24352132
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Rewind
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: d68a525e9e943da498247414d22dbd27
+  m_Children: []
+  m_Volume: 3601fb01840640d47b8d670aa434b374
+  m_Pitch: c3bb7673269541842bc993d8ee4c59fa
+  m_Effects:
+  - {fileID: 24412214}
+  m_UserColorIndex: 5
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
 --- !u!244 &24400002
 AudioMixerEffectController:
   m_ObjectHideFlags: 3
@@ -107,6 +127,19 @@ AudioMixerEffectController:
   m_EffectID: 791a4b5c90ef160439fdc5571eafef58
   m_EffectName: Attenuation
   m_MixLevel: 97b3fe85c0b28814f831c473f5c24503
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!244 &24412214
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_EffectID: d99f7115be493924d82171bd7dfc6a12
+  m_EffectName: Attenuation
+  m_MixLevel: 0dad0a26a6778ee4f9a44972ebba6165
   m_Parameters: []
   m_SendTarget: {fileID: 0}
   m_EnableWetMix: 0
@@ -155,10 +188,24 @@ AudioMixerSnapshotController:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Default
+  m_Name: Normal
   m_AudioMixer: {fileID: 24100000}
   m_SnapshotID: 12fb66c0995ac7c4796d40d4bfebdce0
   m_FloatValues:
+    3601fb01840640d47b8d670aa434b374: -80
     aa935446f11f0364da9839f735e1894c: -.0257765595
     b4d683b7274bec240882d39c32aedabd: -.0837488323
+  m_TransitionOverrides: {}
+--- !u!245 &24574530
+AudioMixerSnapshotController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Rewind
+  m_AudioMixer: {fileID: 24100000}
+  m_SnapshotID: f0f3458662aa5f54aa707b42106721a9
+  m_FloatValues:
+    aa935446f11f0364da9839f735e1894c: -80
+    b4d683b7274bec240882d39c32aedabd: -80
+    f82c493e4c29c314e9d679297fe33d9e: -80
   m_TransitionOverrides: {}
