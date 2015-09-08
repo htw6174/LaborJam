@@ -23,6 +23,14 @@ public class creditsScroll : MonoBehaviour {
 		}
 		
 	}
+	void Update () 
+	{
+		if (Input.GetKeyUp(KeyCode.Escape))
+		{
+			Cursor.visible = !Cursor.visible;
+			Cursor.lockState= CursorLockMode.None;
+		}
+	}
 	
 	IEnumerator delayStart()
 	{
