@@ -2,22 +2,34 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityStandardAssets.Characters.FirstPerson;
+using UnityEngine.Audio;
 
 public class rewind : MonoBehaviour {
 
 	public bool rewindMe = false;
 	public float rewindFrameTime = 1.0f;
-	public float replayFrameTime = 0.5f;
+	public float replayFrameTime = 0.3f;
+	public AudioMixer myAudioMixer;
+	public AudioMixerSnapshot RewindSnap;
+	public AudioMixerSnapshot NormalSnap;
 
 	private List<Vector3> positions = new List<Vector3>();
 	private List<Quaternion> rotations = new List<Quaternion>();
 	private Camera mainCam;
 	private int i = 0;
+	private AudioSource myRewindSound;
 
 	// Use this for initialization
 	void Start () 
 	{
+		myAudioMixer.SetFloat("sfxVol",0.75f);
+		myAudioMixer.SetFloat("musicVol",0.75f);
+
 		mainCam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
+		myRewindSound = this.gameObject.GetComponent<AudioSource>();
+		RewindSnap = myAudioMixer.FindSnapshot("Rewind");
+		NormalSnap = myAudioMixer.FindSnapshot("Normal");
+		NormalSnap.TransitionTo(.5f);
 		StartCoroutine("record");
 	}
 	
@@ -29,6 +41,10 @@ public class rewind : MonoBehaviour {
 			gameObject.GetComponent<RigidbodyFirstPersonController>().enabled = false;
 			gameObject.GetComponent<Rigidbody>().useGravity = false;
 			gameObject.GetComponent<Rigidbody>().isKinematic = true;
+			RewindSnap.TransitionTo(0.3f);
+			myAudioMixer.SetFloat("sfxVol",-79.0f);
+			myAudioMixer.SetFloat("musicVol",-79.0f);
+			myRewindSound.Play();
 
 			i = positions.Count-1;
 			StartCoroutine("replay");
