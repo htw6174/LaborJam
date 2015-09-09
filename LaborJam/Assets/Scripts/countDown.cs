@@ -36,7 +36,9 @@ public class countDown : MonoBehaviour {
 
 	void UpdateTime()
 	{
-		locTime -= Time.deltaTime * SubtractingTime;
+        float deltaTime = Time.deltaTime * SubtractingTime;
+        Debug.Log(deltaTime);
+		locTime -= deltaTime;
 		locMinutes = Mathf.Floor(locTime / 60);
 		locSeconds = Mathf.Floor(locTime % 60);
 		if (locSeconds == 60)
@@ -53,7 +55,7 @@ public class countDown : MonoBehaviour {
 		if (locTime <= 0 && rewindFlag)
 		{
 			locTime = 0;
-			SubtractingTime = -1.0f * GameObject.FindGameObjectWithTag("Player").GetComponent<rewind>().rewindFrameTime/GameObject.FindGameObjectWithTag("Player").GetComponent<rewind>().replayFrameTime;
+            SubtractingTime = -1.0f * GameObject.FindGameObjectWithTag("Player").GetComponent<rewind>().rewindFrameTime / GameObject.FindGameObjectWithTag("Player").GetComponent<rewind>().replayFrameTime / (7f / 3f);
 
 			GameObject.FindGameObjectWithTag("Player").GetComponent<rewind>().rewindMe = true;
 			rewindFlag = false;

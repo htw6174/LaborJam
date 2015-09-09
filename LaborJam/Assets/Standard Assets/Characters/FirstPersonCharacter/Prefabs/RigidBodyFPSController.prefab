@@ -155,7 +155,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: .0219999999
-  m_StereoMirrorMode: 0
 --- !u!54 &5400000
 Rigidbody:
   m_ObjectHideFlags: 1
@@ -529,8 +528,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rewindMe: 0
-  rewindFrameTime: .00659999996
-  replayFrameTime: .200000003
+  rewindFrameTime: .200000003
+  replayFrameTime: .00666666683
   myAudioMixer: {fileID: 24100000, guid: 71787c1e65aec374d93221cbb755fdb2, type: 2}
   RewindSnap: {fileID: 0}
   NormalSnap: {fileID: 0}

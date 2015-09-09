@@ -7013,22 +7013,6 @@ Prefab:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 11488804, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 2}
-      propertyPath: initialTime
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 11496648, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 2}
-      propertyPath: rewindMe
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 11496648, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 2}
-      propertyPath: rewindFrameTime
-      value: .200000003
-      objectReference: {fileID: 0}
-    - target: {fileID: 11496648, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 2}
-      propertyPath: replayFrameTime
-      value: .00666666683
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 2}
   m_IsPrefabParent: 0
