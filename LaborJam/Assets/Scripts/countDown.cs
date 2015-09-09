@@ -13,7 +13,7 @@ public class countDown : MonoBehaviour {
 	private float locSeconds;
 	//private string locMilli;
 
-	private float SubtractingTime = 1;
+	private float SubtractingTime = 1.0f;
 	private bool rewindFlag = true;
 	//private bool firstTime = true;
 
@@ -53,7 +53,7 @@ public class countDown : MonoBehaviour {
 		if (locTime <= 0 && rewindFlag)
 		{
 			locTime = 0;
-			SubtractingTime = -1 * GameObject.FindGameObjectWithTag("Player").GetComponent<rewind>().rewindFrameTime/GameObject.FindGameObjectWithTag("Player").GetComponent<rewind>().replayFrameTime;
+			SubtractingTime = -1.0f * GameObject.FindGameObjectWithTag("Player").GetComponent<rewind>().rewindFrameTime/GameObject.FindGameObjectWithTag("Player").GetComponent<rewind>().replayFrameTime;
 
 			GameObject.FindGameObjectWithTag("Player").GetComponent<rewind>().rewindMe = true;
 			rewindFlag = false;

@@ -34,6 +34,7 @@ GameObject:
   - 114: {fileID: 11491688}
   - 114: {fileID: 11496648}
   - 82: {fileID: 8207476}
+  - 114: {fileID: 11456096}
   m_Layer: 0
   m_Name: RigidBodyFPSController
   m_TagString: Player
@@ -114,8 +115,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100006}
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: -1.62920685e-07}
-  m_LocalPosition: {x: -283.51239, y: 194.229996, z: -221.567001}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -79.5220032, y: 33, z: 133.227005}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400000}
@@ -422,6 +423,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inventory: []
+--- !u!114 &11456096
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e015abe468446d54b848859e3bba339c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11457278
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -489,7 +501,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e2e373859e0bd04289b1bd8a2be0278, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  initialTime: 10
+  initialTime: 300
   timerOn: 1
 --- !u!114 &11491688
 MonoBehaviour:
@@ -517,8 +529,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rewindMe: 0
-  rewindFrameTime: .200000003
-  replayFrameTime: .100000001
+  rewindFrameTime: .00659999996
+  replayFrameTime: .200000003
   myAudioMixer: {fileID: 24100000, guid: 71787c1e65aec374d93221cbb755fdb2, type: 2}
   RewindSnap: {fileID: 0}
   NormalSnap: {fileID: 0}

@@ -48,7 +48,7 @@ public class item : MonoBehaviour {
 			if (player.GetComponent<playerInventory>().inventory.Contains(RemoveMe))
 			{
 				player.GetComponent<playerInventory>().inventory.Remove(RemoveMe);
-
+				this.GetComponent<AudioSource>().Play();
 				if (name == "CktSlot")
 				{
 					player.GetComponent<gameWin>().swappedCktBoards = true;
