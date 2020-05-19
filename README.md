@@ -61,9 +61,7 @@ Font: "Digital Dream Font by PizzaDude"
 http://www.1001fonts.com/digital-dream-font.html   
 
 
-## Our Web Presenc
+## Our Web Presence
 itch.io    
 http://jet-drift.itch.io/    
 
-TIGsource
-Lucas:  http://forums.tigsource.com/index.php?action=profile;u=47783   
