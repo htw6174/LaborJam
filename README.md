@@ -1,11 +1,11 @@
 # LaborJam
 
 
-##Installation
+## Installation
 Download the release file, extract, and run the executable file. 
 
 
-##Controls
+## Controls
 
 Movement		WASD
 
@@ -18,24 +18,24 @@ Interact		F
 
 
 
-##Authors
+## Authors
 Graphical Assets:   Hardy Whitney
 
 Code:               Hardy Whitney and Lucas Rumney
 
-##Project File
+## Project File
 Download the source files, extract, and open scenes->"menu.scene".   
 
 Feel free to use any part of the code (just give credit where credit is due).  
 
 
-##Contact Us
+## Contact Us
 For questions regarding installation, or bugs please contact us at:  
 jetdriftstudio@gmail.com  
 
 Questions or Comments regarding code are also always welcome!  
 
-##External Asset Credits
+## External Asset Credits
 
 Sounds are from the following sources:  
 itemGet      http://www.freesound.org/people/GameAudio/sounds/220166/  
@@ -61,7 +61,7 @@ Font: "Digital Dream Font by PizzaDude"
 http://www.1001fonts.com/digital-dream-font.html   
 
 
-##Our Web Presenc
+## Our Web Presenc
 itch.io    
 http://jet-drift.itch.io/    
 
